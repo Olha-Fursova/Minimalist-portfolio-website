@@ -1,0 +1,55 @@
+/* ========================
+   🎨 QUICK CUSTOMIZATION
+======================== */
+
+/*
+  Change these values to quickly adapt template:
+  - Colors
+  - Fonts
+  - Spacing
+*/
+
+:root {
+
+  /* === CHANGE COLORS HERE === */
+
+  --color-primary: #ffffff;
+  --color-primary-light: #ffffff;
+  --color-accent: #ffffff;
+
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-decorative: #ffffff;
+
+  --color-text: #ffffff;
+  --color-text-inverse: #ffffff;
+
+  /* === CHANGE FONTS HERE === */
+
+  --font-main: ;
+  --font-accent: ;
+
+  /* === CHANGE SPACING HERE === */
+
+  --spacing-sm: 1.2rem;
+  --spacing-md: 2.4rem;
+  --spacing-lg: 4.6rem;
+  --spacing-extra-lg: 6.4rem;
+
+  /* === CHANGE BRAND RADIUS HERE === */
+
+  --radius-md: 0.8rem;
+
+  /* === CHANGE TRANSITION SPEED HERE === */
+
+  --transition-fast: 150ms ease-in-out;
+
+  /* === CHANGE GRADIENTS HERE === */
+
+  --hero-overlay: ;
+  
+  /* === CHANGE SHADOWS HERE === */
+
+  --shadow-plain: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.1);
+}

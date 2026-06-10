@@ -1,0 +1,105 @@
+/* ========================
+    BASIC STYLES
+======================== */
+
+body {
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+
+  /* Background color (edit here) */
+  background-color: var(--color-bg);
+
+  font-family: var(--font-main);
+}
+
+.visually__hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Text */
+
+.section__title {
+  font-size: 3.2rem;
+  line-height: 130%;
+  letter-spacing: 0;
+  font-weight: bold;
+
+  /* Change font here */
+  font-family: var(--font-accent);
+
+  /* Change space under header here */
+  margin-bottom: var(--spacing-md);
+}
+
+/* Buttons */
+
+.btn {
+  /* Button base styles */
+  padding: 1.2rem 3.6rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0;
+  font-weight: 400;
+
+  /* Change radius here */
+  border-radius: var(--radius-md);
+
+  /* Change transition speed here */
+  transition:
+    all var(--transition-fast);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.btn__primary {
+  /* Change primary buttons color here */
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.btn__secondary {
+  /* Change secondary buttons color here */
+  color: var(--color-primary);
+  background-color: var(--color-bg);
+  border: 1px solid transparent;
+}
+
+/* Icons */
+
+.icon {
+  /* Change icons size here */
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+@media screen and (min-width: 90rem) {
+  .btn__primary:hover,
+  .btn__primary:focus {
+    /* Change button color on hover */
+    background-color: var(--color-accent);
+  }
+
+  .btn__secondary:hover,
+  .btn__secondary:focus {
+    /* Change button color on hover */
+    border-color: var(--color-text);
+    color: var(--color-text);
+  }
+}
