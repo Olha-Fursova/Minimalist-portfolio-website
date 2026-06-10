@@ -47,8 +47,8 @@
 
   /* === CHANGE FONTS HERE === */
 
-  --font-main: ;
-  --font-accent: ;
+  --font-main: "Public Sans", sans-serif;
+  --font-accent: "Ibarra Real Nova", serif; 
 
   /* === CHANGE SPACING HERE === */
 
