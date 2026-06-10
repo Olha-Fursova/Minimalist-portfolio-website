@@ -41,16 +41,9 @@
   letter-spacing: 2px;
   font-weight: 400;
   text-transform: uppercase;
-  transition: transform var(--transition-fast), color var(--transition-fast);
-}
-
-.nav__link.active {
-  color: var(--color-primary-light);
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  transform: scale(1.05);
+  transition:
+    transform var(--transition-fast),
+    color var(--transition-fast);
 }
 
 /* Icons */
@@ -89,6 +82,10 @@
   .nav__link {
     display: block;
   }
+
+  .nav__link.active {
+    color: var(--color-primary-light);
+  }
 }
 
 /* Desktop */
@@ -96,5 +93,10 @@
 @media screen and (min-width: 90rem) {
   .header {
     padding: 6.4rem 0 0 0;
+  }
+
+  .nav__link:hover,
+  .nav__link:focus {
+    transform: scale(1.05);
   }
 }

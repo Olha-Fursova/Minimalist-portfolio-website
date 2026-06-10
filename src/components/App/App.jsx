@@ -18,7 +18,7 @@ const App = () => {
     setIsMobileOpen(!isMobileOpen);
   } 
   return (
-    <>
+    <div className={`main__container ${isMobileOpen && "modal__open"}`}>
       <AppBar isOpen={isMobileOpen} onOpen={handleMobileOpen}/>
 
       <MobileMenu isOpen={isMobileOpen} onClose={handleMobileOpen}/>
@@ -32,8 +32,10 @@ const App = () => {
           </Routes>
         </Suspense>
       </main>
+
       <Footer />
-    </>
+
+    </div>
   );
 };
 

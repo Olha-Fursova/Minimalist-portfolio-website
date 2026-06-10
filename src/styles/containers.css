@@ -9,6 +9,21 @@
 }
 
 /* Main container layout */
+
+.main__container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main__container.modal-open {
+  overflow: hidden;
+  height: 100vh;
+  pointer-events: none;
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
