@@ -13,16 +13,37 @@
 
   /* === CHANGE COLORS HERE === */
 
-  --color-primary: #ffffff;
-  --color-primary-light: #ffffff;
-  --color-accent: #ffffff;
+  --color-primary: var(--blue);
+  --color-primary-light: var(--teal);
+  --color-accent: var(--red);
 
-  --color-bg: #ffffff;
-  --color-surface: #ffffff;
-  --color-decorative: #ffffff;
+  --color-bg: var(--white);
+  --color-surface: var(--slate-dark);
+  --color-decorative: var(--grey);
 
-  --color-text: #ffffff;
-  --color-text-inverse: #ffffff;
+  --color-text: var(--slate-dark);
+  --color-text-inverse: var(--white);
+
+  /* ===  COLOR NAMES === */
+
+  --black: #000000;
+  --white: #ffffff;
+  --grey: #979797;
+  --neutral-middle: #f5f5f5;
+  --neutral-light: #fafafa;
+
+  --slate-dark: #33323d;
+  --slate-middle: #9a99ab;
+  --slate-light: #d8d6d7;
+
+  --indigo-dark: #4f63d8;
+  --indigo-light: #5267e0;
+
+  --blue: #203a4c;
+  --teal: #5fb4a2;
+  --sky: #41b4d3;
+  --linen: #ffefec;
+  --red: #f43030;
 
   /* === CHANGE FONTS HERE === */
 
