@@ -1,0 +1,100 @@
+/* ========================
+    AppBar
+======================== */
+
+/* Containers */
+
+.header {
+  width: 100%;
+  padding: 3.2rem 3.2rem 0 3.2rem;
+}
+
+.header__container {
+  max-width: 111rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+/* Links */
+
+.logo {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__link {
+  display: none;
+  font-size: 1.2rem;
+  line-height: 115%;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.nav__link.active {
+  color: var(--color-primary-light);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  transform: scale(1.05);
+}
+
+/* Icons */
+
+.logo__icon {
+  width: 6rem;
+  height: 3.2rem;
+  fill: var(--color-surface);
+}
+
+.mobile__btn {
+  width: 2.4rem;
+  height: 1.3rem;
+}
+
+/* Buttons */
+
+.modal__button {
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 48rem) {
+  .header {
+    padding: 6.4rem 4rem 0 4rem;
+  }
+
+  .modal__button {
+    display: none;
+  }
+
+  .nav__link {
+    display: block;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 90rem) {
+  .header {
+    padding: 6.4rem 0 0 0;
+  }
+}

@@ -63,7 +63,7 @@
 
   /* === CHANGE TRANSITION SPEED HERE === */
 
-  --transition-fast: 150ms ease-in-out;
+  --transition-fast: 100ms ease-in-out;
 
   /* === CHANGE GRADIENTS HERE === */
 

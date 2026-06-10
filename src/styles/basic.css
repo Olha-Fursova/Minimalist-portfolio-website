@@ -12,6 +12,7 @@ body {
   background-color: var(--color-bg);
 
   font-family: var(--font-main);
+  color: var(--color-text);
 }
 
 .visually__hidden {

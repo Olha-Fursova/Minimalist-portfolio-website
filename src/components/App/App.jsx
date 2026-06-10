@@ -16,7 +16,7 @@ const App = () => {
 
   const handleMobileOpen = () => {
     setIsMobileOpen(!isMobileOpen);
-  }
+  } 
   return (
     <>
       <AppBar isOpen={isMobileOpen} onOpen={handleMobileOpen}/>
