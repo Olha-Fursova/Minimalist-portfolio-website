@@ -5,7 +5,7 @@
 /* Section layout */
 .section {
   width: 100%;
-  padding: 8rem 0;
+  margin-bottom: 9.6rem;
 }
 
 /* Main container layout */
@@ -25,23 +25,27 @@
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 111rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
 
 @media screen and (min-width: 48rem) {
+  .section {
+    margin-bottom: 9.6rem;
+  }
+
   .container {
-    padding: 0 4.6rem;
+    padding: 0 4rem;
   }
 }
 
 @media screen and (min-width: 90rem) {
   .section {
-    padding: 12rem 0;
+    margin-bottom: 15rem;
   }
   
   .container {
-    padding: 0 6.4rem;
+    padding: 0;
   }
 }
