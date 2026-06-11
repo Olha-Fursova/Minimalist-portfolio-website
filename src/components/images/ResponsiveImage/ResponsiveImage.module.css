@@ -1,0 +1,26 @@
+/* ========================
+    IMAGE COMPONENT
+======================== */
+
+/* Containers */
+
+.image__container {
+  height: 27.1rem;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+/* Images */
+
+.section__image {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 48rem) {
+  .image__container {
+    height: 60rem;
+  }
+}
