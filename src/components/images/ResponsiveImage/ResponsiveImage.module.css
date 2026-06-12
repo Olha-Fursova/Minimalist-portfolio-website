@@ -5,7 +5,7 @@
 /* Containers */
 
 .image__container {
-  height: 27.1rem;
+  height: fit-content;
   overflow: hidden;
   align-self: stretch;
 }
@@ -15,12 +15,4 @@
 .section__image {
   object-fit: cover;
   object-position: center;
-}
-
-/* Tablet */
-
-@media screen and (min-width: 48rem) {
-  .image__container {
-    height: 60rem;
-  }
 }

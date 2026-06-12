@@ -52,9 +52,6 @@ body {
   padding: 1.6rem 3.2rem;
   text-transform: uppercase;
 
-  /* Change radius here */
-  border-radius: var(--radius-md);
-
   /* Change transition speed here */
   transition:
     all var(--transition-fast);
@@ -96,7 +93,7 @@ body {
   .btn__secondary:hover,
   .btn__secondary:focus {
     /* Change button color on hover */
-    border-color: var(--color-text);
-    color: var(--color-text);
+    background-color: var(--color-text);
+    color: var(--color-text-inverse);
   }
 }

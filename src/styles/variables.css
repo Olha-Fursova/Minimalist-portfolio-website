@@ -19,7 +19,7 @@
 
   --color-bg: var(--white);
   --color-surface: var(--slate-dark);
-  --color-decorative: var(--grey);
+  --color-decorative: rgb(151, 151, 151, 0.15);
 
   --color-text: var(--slate-dark);
   --color-text-inverse: var(--white);
@@ -28,7 +28,6 @@
 
   --black: #000000;
   --white: #ffffff;
-  --grey: #979797;
   --neutral-middle: #f5f5f5;
   --neutral-light: #fafafa;
 
