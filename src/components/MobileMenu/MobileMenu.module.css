@@ -1,0 +1,73 @@
+/* ========================
+    Mobile Menu
+======================== */
+
+/* Containers */
+
+.modal__overlay {
+  position: fixed;
+  top: 8.8rem;
+  right: 3.2rem;
+  width: 22.3rem;
+  height: 18.6rem;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-surface);
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition:
+    transform var(--transition-slow),
+    opacity var(--transition-slow);
+}
+
+.modal__overlay.is__open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+
+  font-size: 1.6rem;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+
+  color: var(--blue-dark);
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.modalOpen {
+  transform: translateX(0);
+}
+
+.mobile__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+/* Typography */
+
+.nav__link {
+  font-size: 1.2rem;
+  line-height: 115%;
+  letter-spacing: 2px;
+  font-weight: 300;
+
+  text-transform: uppercase;
+  color: var(--color-text-inverse);
+}

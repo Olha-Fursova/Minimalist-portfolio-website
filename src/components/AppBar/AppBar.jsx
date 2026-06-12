@@ -7,7 +7,7 @@ const buildLinkClass = ({ isActive }) => {
   return clsx(css["nav__link"], isActive && css.active);
 };
 
-const AppBar = ({ isOpen, onOpen }) => {
+const AppBar = ({ isOpen, onToggle }) => {
   return (
     <header className={css.header}>
       <div className={css.header__container}>
@@ -36,18 +36,33 @@ const AppBar = ({ isOpen, onOpen }) => {
             Contact me
           </NavLink>
 
-          <button
-            className={css.modal__button}
-            type="button"
-            aria-expanded={isOpen}
-            aria-controls="mobile-menu"
-            aria-label="open menu"
-            onClick={onOpen}
-          >
-            <svg className={css.mobile__btn}>
-              <use href="/icons.svg#icon-mobile-menu-open" />
-            </svg>
-          </button>
+          {!isOpen ? (
+            <button
+              className={css.modal__button}
+              type="button"
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+              aria-label="open menu"
+              onClick={onToggle}
+            >
+              <svg className={css.mobile__btn}>
+                <use href="/icons.svg#icon-mobile-menu-open" />
+              </svg>
+            </button>
+          ) : (
+            <button
+              className={css.modal__button}
+              type="button"
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+              aria-label="close menu"
+              onClick={onToggle}
+            >
+              <svg className={`${css.mobile__btn} ${css.mobile__close}`}>
+                <use href="/icons.svg#icon-mobile-menu-close" />
+              </svg>
+            </button>
+          )}
         </nav>
       </div>
     </header>

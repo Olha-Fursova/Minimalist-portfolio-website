@@ -62,6 +62,13 @@
 .mobile__btn {
   width: 2.4rem;
   height: 1.3rem;
+  stroke: var(--color-surface);
+  fill: var(--color-surface);
+}
+
+.mobile__close {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 .logo__decorative1,

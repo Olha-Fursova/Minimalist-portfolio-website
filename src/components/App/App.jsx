@@ -19,7 +19,7 @@ const App = () => {
   } 
   return (
     <div className={`main__container ${isMobileOpen && "modal__open"}`}>
-      <AppBar isOpen={isMobileOpen} onOpen={handleMobileOpen}/>
+      <AppBar isOpen={isMobileOpen} onToggle={handleMobileOpen}/>
 
       <MobileMenu isOpen={isMobileOpen} onClose={handleMobileOpen}/>
 
