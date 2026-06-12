@@ -16,7 +16,7 @@ const About = () => {
           <div className={css.deviding__line}></div>
 
           <article className={css.about__article}>
-            <h2 className={css.about__header}>About Me</h2>
+            <h2 className="section__title">About Me</h2>
 
             <p className={css.about__bio}>
               I’m a junior front-end developer looking for a new role in an

@@ -30,19 +30,17 @@ body {
   overflow: hidden;
 }
 
-/* Text */
+/* Typography */
 
 .section__title {
-  font-size: 3.2rem;
-  line-height: 130%;
-  letter-spacing: 0;
-  font-weight: bold;
+  font-size: 4rem;
+  line-height: 105%;
+  letter-spacing: -0.35px;
+  font-weight: 800;
 
   /* Change font here */
   font-family: var(--font-accent);
-
-  /* Change space under header here */
-  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
 }
 
 /* Buttons */
