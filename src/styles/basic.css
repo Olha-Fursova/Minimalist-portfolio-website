@@ -90,7 +90,7 @@ body {
   .btn__primary:hover,
   .btn__primary:focus {
     /* Change button color on hover */
-    background-color: var(--color-accent);
+    background-color: var(--color-primary-light);
   }
 
   .btn__secondary:hover,

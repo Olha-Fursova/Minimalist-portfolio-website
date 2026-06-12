@@ -90,4 +90,9 @@
     width: 44.5rem;
     height: 35.7rem;
   }
+
+  .hero__cta:hover .button__icon,
+  .hero__cta:focus .button__icon {
+    stroke: var(--color-bg);
+  }
 }
