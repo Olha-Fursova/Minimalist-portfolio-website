@@ -6,8 +6,16 @@ const Footer = () => {
   return (
     <footer className={css.footer}>
       <div className={css.footer__container}>
-        <NavLink to="/" className={css.logo}>
+        <NavLink to="/" className={css.logo__container}>
           <svg className={css.logo__icon}>
+            <use href="/icons.svg#icon-logo" />
+          </svg>
+
+          <svg className={css.logo__decorative1}>
+            <use href="/icons.svg#icon-logo" />
+          </svg>
+          
+          <svg className={css.logo__decorative2}>
             <use href="/icons.svg#icon-logo" />
           </svg>
         </NavLink>

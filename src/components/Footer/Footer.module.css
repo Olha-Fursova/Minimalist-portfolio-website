@@ -40,6 +40,10 @@
   justify-content: center;
 }
 
+.logo__container {
+  position: relative;
+}
+
 /* Links */
 
 .nav__link {
@@ -56,15 +60,85 @@
 /* Icons */
 
 .logo__icon {
+  position: relative;
   width: 6rem;
   height: 3.2rem;
   fill: var(--color-text-inverse);
+  z-index: 5;
+
+  transition: all var(--transition-fast);
 }
 
 .social__icon {
   width: 2.5rem;
   height: 2.4rem;
   fill: var(--color-text-inverse);
+}
+
+.logo__decorative1,
+.logo__decorative2 {
+  width: 6rem;
+  height: 3.2rem;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+
+  fill: var(--color-primary-light);
+  z-index: 0;
+}
+
+/* Animations */
+
+@keyframes logomove1up {
+  0% {
+    transform: translate(-1rem, -1rem);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.8;
+  }
+
+  20% {
+    transform: translate(-1.6rem, -1.6rem) scale(0.98);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateY(-2rem, -2rem) scale(0.95);
+    opacity: 0.3;
+  }
+
+  80% {
+    transform: translateY(-2.4rem, -2.4rem) scale(0.9);
+    opacity: 0;
+  }
+}
+
+@keyframes logomove1down {
+  0% {
+    transform: translate(1rem, 1rem);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.8;
+  }
+
+  20% {
+    transform: translate(1.6rem, 1.6rem) scale(0.98);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateY(2rem, 2rem) scale(0.95);
+    opacity: 0.3;
+  }
+
+  80% {
+    transform: translateY(2.4rem, 2.4rem) scale(0.9);
+    opacity: 0;
+  }
 }
 
 /* Tablet */
@@ -91,6 +165,26 @@
 @media screen and (min-width: 90rem) {
   .nav__link:hover,
   .nav__link:focus {
+    transform: scale(1.05);
+  }
+
+  .social__item:hover .social__icon,
+  .social__item:focus .social__icon {
+    transform: scale(1.05);
+  }
+
+  .logo__container:hover .logo__decorative1,
+  .logo__container:focus .logo__decorative1 {
+    animation: logomove1up 1s linear;
+  }
+
+  .logo__container:hover .logo__decorative2,
+  .logo__container:focus .logo__decorative2 {
+    animation: logomove1down 1s linear;
+  }
+
+  .logo__container:hover .logo__icon,
+  .logo__container:focus .logo__icon {
     transform: scale(1.05);
   }
 }

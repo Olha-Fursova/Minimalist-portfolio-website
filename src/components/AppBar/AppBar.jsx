@@ -10,9 +10,17 @@ const buildLinkClass = ({ isActive }) => {
 const AppBar = ({ isOpen, onOpen }) => {
   return (
     <header className={css.header}>
-      <div className={css["header__container"]}>
-        <NavLink to="/" className={css.logo}>
-          <svg className={css["logo__icon"]}>
+      <div className={css.header__container}>
+        <NavLink to="/" className={css.logo__container}>
+          <svg className={css.logo__icon}>
+            <use href="/icons.svg#icon-logo" />
+          </svg>
+
+          <svg className={css.logo__decorative1}>
+            <use href="/icons.svg#icon-logo" />
+          </svg>
+
+          <svg className={css.logo__decorative2}>
             <use href="/icons.svg#icon-logo" />
           </svg>
         </NavLink>
@@ -29,14 +37,14 @@ const AppBar = ({ isOpen, onOpen }) => {
           </NavLink>
 
           <button
-            className={css["modal__button"]}
+            className={css.modal__button}
             type="button"
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             aria-label="open menu"
             onClick={onOpen}
           >
-            <svg className={css["mobile__btn"]}>
+            <svg className={css.mobile__btn}>
               <use href="/icons.svg#icon-mobile-menu-open" />
             </svg>
           </button>

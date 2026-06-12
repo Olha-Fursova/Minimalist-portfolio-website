@@ -5,7 +5,7 @@ import css from "./About.module.css";
 
 const About = () => {
   return (
-    <section className="section">
+    <section className="section" id="about">
       <div className={`container ${css.about__container}`}>
         <ResponsiveImage
           baseName="image-homepage-profile"

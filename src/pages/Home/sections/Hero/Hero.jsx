@@ -15,13 +15,13 @@ const Hero = () => {
             Hey, I’m Alex Spencer and I love building beautiful websites
           </h1>
 
-          <a className={`btn__primary ${css.hero__cta}`}>
+          <a className={`btn__primary ${css.hero__cta}`} href="#about">
             <span className={css.icon__container}>
               <svg className={css.button__icon}>
                 <use href="/icons.svg#icon-arrow-down" />
               </svg>
             </span>
-            <p className="btn" href="#about">
+            <p className="btn">
               About Me
             </p>
           </a>
