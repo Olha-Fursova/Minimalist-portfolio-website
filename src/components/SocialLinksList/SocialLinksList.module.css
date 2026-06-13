@@ -1,0 +1,43 @@
+/* ========================
+    Social Links List component
+======================== */
+
+/* Containers */
+
+.social__list {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.social__item,
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icons */
+
+.social__icon {
+  width: 2.5rem;
+  height: 2.4rem;
+  fill: var(--color-text-inverse);
+}
+
+/* Tablet */
+
+@media screen and (min-width: 48rem) {
+  .social__list {
+    margin-left: auto;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 90rem) {
+  .social__item:hover .social__icon,
+  .social__item:focus .social__icon {
+    transform: scale(1.05);
+  }
+}
