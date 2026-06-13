@@ -1,8 +1,8 @@
 import css from "./SocialLinksList.module.css";
 
-const SocialLinksList = ({ iconColor }) => {
+const SocialLinksList = ({ iconColor, marginLeft }) => {
   return (
-    <ul className={css.social__list}>
+    <ul className={css.social__list} style={{ "marginLeft": marginLeft }}>
       <li className={css.social__item}>
         <a className={css.social__link} href="https://solvixcode.com">
           <svg className={css.social__icon} style={{ "fill": iconColor }}>
