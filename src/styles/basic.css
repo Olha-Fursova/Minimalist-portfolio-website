@@ -81,6 +81,14 @@ body {
   height: 2.8rem;
 }
 
+/* Figures */
+
+.decorative__line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-decorative);
+}
+
 @media screen and (min-width: 90rem) {
   .btn__primary:hover,
   .btn__primary:focus {

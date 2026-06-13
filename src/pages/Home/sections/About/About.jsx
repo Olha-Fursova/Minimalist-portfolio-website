@@ -13,7 +13,7 @@ const About = () => {
           folderName="homepage"
         />
         <div className={css.about_content}>
-          <div className={css.deviding__line}></div>
+          <div className="decorative__line"></div>
 
           <article className={css.about__article}>
             <h2 className="section__title">About Me</h2>
@@ -35,7 +35,7 @@ const About = () => {
             </Link>
           </article>
 
-          <div className={css.deviding__line}></div>
+          <div className="decorative__line"></div>
         </div>
       </div>
     </section>

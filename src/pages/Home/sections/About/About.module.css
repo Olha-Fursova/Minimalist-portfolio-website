@@ -46,14 +46,6 @@
   color: var(--color-text);
 }
 
-/* Figures */
-
-.deviding__line {
-  height: 1px;
-  width: 100%;
-  background-color: var(--color-decorative);
-}
-
 /* Tablet */
 
 @media screen and (min-width: 48rem) {
