@@ -17,11 +17,13 @@
   --color-primary-light: var(--teal);
   --color-accent: var(--red);
 
-  --color-bg: var(--white);
+  --color-bg: var(--neutral-light);
   --color-surface: var(--slate-dark);
-  --color-decorative: rgb(151, 151, 151, 0.15);
+  --color-decorative-15: rgb(151, 151, 151, 0.15);
+  --color-decorative-10: rgb(151, 151, 151, 0.15);
 
   --color-text: var(--slate-dark);
+  --color-text-40: rgb(51, 50, 61, 0.4);
   --color-text-inverse: var(--white);
 
   /* ===  COLOR NAMES === */
@@ -30,6 +32,7 @@
   --white: #ffffff;
   --neutral-middle: #f5f5f5;
   --neutral-light: #fafafa;
+  --grey: #979797;
 
   --slate-dark: #33323d;
   --slate-middle: #9a99ab;

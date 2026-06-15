@@ -1,0 +1,86 @@
+/* ========================
+    Contact Form
+======================== */
+
+/* Containers */
+
+.form {
+  width: 100%;
+}
+
+.form__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.field__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.input__box {
+  width: 100%;
+  padding: 0.9rem 1.8rem;
+  background-color: var(--color-decorative-10);
+
+  font-weight: 300;
+}
+
+.input__error {
+  border: 1px solid var(--red);
+}
+
+/* Typography */
+
+.form__lable,
+.input__box,
+.success__message,
+.input__box::placeholder {
+  font-size: 1.3rem;
+  line-height: 230%;
+  letter-spacing: 0;
+}
+
+.form__lable {
+  font-weight: 700;
+
+  color: var(--color-text);
+}
+
+.input__box::placeholder {
+  font-weight: 300;
+
+  color: var(--color-text-40);
+}
+
+.error__message {
+  font-size: 1rem;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-weight: 800;
+  font-style: italic;
+
+  color: var(--red);
+}
+
+.success__message {
+  font-weight: 800;
+
+  color: var(--teal);
+}
+
+/* Tablet */
+
+@media screen and (min-width: 48rem) {
+  .form__container {
+    gap: 2.4rem;
+  }
+}
+
+

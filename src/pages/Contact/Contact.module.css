@@ -4,6 +4,11 @@
 
 /* Containers */
 
+.contact__section {
+  margin-bottom: 2.4rem;
+}
+
+.contact__form,
 .contact__container {
   display: flex;
   flex-direction: column;
@@ -30,9 +35,14 @@
 /* Desktop */
 
 @media screen and (min-width: 90rem) {
+  .contact__section {
+    margin-bottom: 4.8rem;
+  }
+
+  .contact__form,
   .contact__content {
     display: grid;
-    grid-template-columns: 1fr 1.35fr
+    grid-template-columns: 1fr 1.35fr;
   }
 
   .contact__header {

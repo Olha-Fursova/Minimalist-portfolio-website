@@ -86,7 +86,7 @@ body {
 .decorative__line {
   height: 1px;
   width: 100%;
-  background-color: var(--color-decorative);
+  background-color: var(--color-decorative-15);
 }
 
 @media screen and (min-width: 90rem) {

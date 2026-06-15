@@ -27,7 +27,9 @@ svg,
 img,
 ul,
 a,
-picture {
+picture,
+textarea,
+input {
   margin: 0;
   padding: 0;
 }
@@ -41,6 +43,13 @@ a {
 button {
   cursor: pointer;
   background: none;
+  border: none;
+}
+
+input,
+textarea {
+  resize: none;
+  outline: none;
   border: none;
 }
 

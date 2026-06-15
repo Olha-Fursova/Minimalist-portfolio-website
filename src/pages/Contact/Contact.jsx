@@ -1,10 +1,11 @@
 import css from "./Contact.module.css";
 import SocialLinksList from "../../components/SocialLinksList/SocialLinksList";
+import ContactForm from "../../components/ContactForm/ContactForm";
 
 const Contact = () => {
   return (
     <>
-      <section className="section">
+      <section className={`section ${css.contact__section}`}>
         <div className={`container ${css.contact__container}`}>
           <div className="decorative__line"></div>
           <div className={css.contact__content}>
@@ -25,6 +26,13 @@ const Contact = () => {
           </div>
           
           <div className="decorative__line"></div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className={`container ${css.contact__form}`}>
+          <h2 className="section__title">Contact Me</h2>
+          <ContactForm />
         </div>
       </section>
     </>
