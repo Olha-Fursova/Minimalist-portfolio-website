@@ -1,7 +1,7 @@
 import { Link } from "react-router";
-import css from "./HomeCTA.module.css";
+import css from "./CTA.module.css";
 
-const HomeCTA = () => {
+const CTA = () => {
   return (
     <section className="section">
       <div className={`container ${css.cta__container}`}>
@@ -19,4 +19,4 @@ const HomeCTA = () => {
   );
 };
 
-export default HomeCTA;
+export default CTA;

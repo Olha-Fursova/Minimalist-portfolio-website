@@ -1,6 +1,6 @@
 import Hero from "./sections/Hero/Hero";
 import About from "./sections/About/About";
-import HomeCTA from "./sections/HomeCTA/HomeCTA";
+import CTA from "../../components/CTA/CTA";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <About />
 
     {/* Home CTA section component */}
-      <HomeCTA />
+      <CTA />
     </>
   )
 }
