@@ -1,0 +1,97 @@
+/* ========================
+    PREVIEW PROJECT LIST
+======================== */
+
+/* Containers */
+
+.project__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8rem;
+}
+
+.project__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+
+.project__content,
+.project__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+/* Typography */
+
+.project__description {
+  font-size: 1.5rem;
+  line-height: 200%;
+  letter-spacing: 0;
+  font-weight: 300;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 48rem) {
+  .project__card {
+    display: grid;
+    grid-template-columns: 1.21fr 1fr;
+    align-items: center;
+    gap: 5.3rem;
+  }
+
+  .card__reverse {
+    grid-template-columns: 1fr 1.21fr;
+    align-self: flex-end;
+  }
+
+  .card__reverse > :first-child {
+    order: 2;
+  }
+
+  .card__reverse > :last-child {
+    order: 1;
+  }
+
+  .project__content {
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .project__text {
+    gap: 3.2rem;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 90rem) {
+  .project__list {
+    width: 111rem;
+  }
+
+  .project__card {
+    max-width: 101.5rem;
+    grid-template-columns: 54rem 35rem;;
+    gap: 12.5rem;
+  }
+
+  .project__text {
+    gap: 3rem;
+  }
+
+  .card__reverse {
+    grid-template-columns: 35rem 54rem;
+  }
+
+  .project__description {
+    font-size: 1.6rem;
+    line-height: 187.5%;
+  }
+}

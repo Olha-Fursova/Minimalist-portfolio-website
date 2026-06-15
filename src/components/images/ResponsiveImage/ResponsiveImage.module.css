@@ -7,7 +7,6 @@
 .image__container {
   height: fit-content;
   overflow: hidden;
-  align-self: stretch;
 }
 
 /* Images */
