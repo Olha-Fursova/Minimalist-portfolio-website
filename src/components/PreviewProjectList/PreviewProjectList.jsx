@@ -1,11 +1,10 @@
-import { useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import ResponsiveImage from "../images/ResponsiveImage/ResponsiveImage";
 
 import css from "./PreviewProjectList.module.css";
 
 const PreviewProjectList = ({ projects }) => {
-  const location = useLocation();
   return (
     <ul className={css.project__list}>
       {projects.map((project, index) => (
@@ -29,7 +28,6 @@ const PreviewProjectList = ({ projects }) => {
               <Link
                 className="btn btn__secondary"
                 to={`/portfolio/${project.id}`}
-                state={location}
               >
                 View Project
               </Link>

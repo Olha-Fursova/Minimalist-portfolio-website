@@ -9,6 +9,7 @@ import css from "./App.module.css";
 
 const Home = lazy(() => import("../../pages/Home/Home.jsx"));
 const Portfolio = lazy(() => import("../../pages/Portfolio/Portfolio.jsx"));
+const ProjectDetailsPage = lazy(() => import("../../pages/ProjectDetailsPage/ProjectDetailsPage.jsx"));
 const Contact = lazy(() => import("../../pages/Contact/Contact.jsx"));
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:projectId" element={<ProjectDetailsPage />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Suspense>
