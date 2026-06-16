@@ -9,11 +9,11 @@ export const projectsPreviews = [
     category__name: "Interaction Design / Front End Development",
     tech__stack: "HTML / CSS / JS",
     live__page: "https://solvixcode.com/portfolio",
-    static__previews: [
-      { image__main: "image-manage-hero" },
-      { image__1: "image-manage-preview-1" },
-      { image__2: "image-manage-preview-2" },
-    ],
+    static__previews: {
+      image__main: "image-manage-hero",
+      image__1: "image-manage-preview-1",
+      image__2: "image-manage-preview-2",
+    },
   },
   {
     id: "2",
@@ -25,11 +25,11 @@ export const projectsPreviews = [
     category__name: "Interaction Design / Front End Development",
     tech__stack: "HTML / CSS / JS",
     live__page: "https://solvixcode.com/portfolio",
-    static__previews: [
-      { image__main: "image-bookmark-hero" },
-      { image__1: "image-bookmark-preview-1" },
-      { image__2: "image-bookmark-preview-2" },
-    ],
+    static__previews: {
+      image__main: "image-bookmark-hero",
+      image__1: "image-bookmark-preview-1",
+      image__2: "image-bookmark-preview-2",
+    },
   },
   {
     id: "3",
@@ -41,11 +41,11 @@ export const projectsPreviews = [
     category__name: "Interaction Design / Front End Development",
     tech__stack: "HTML / CSS / JS",
     live__page: "https://solvixcode.com/portfolio",
-    static__previews: [
-      { image__main: "image-insure-hero" },
-      { image__1: "image-insure-preview-1" },
-      { image__2: "image-insure-preview-2" },
-    ],
+    static__previews: {
+      image__main: "image-insure-hero",
+      image__1: "image-insure-preview-1",
+      image__2: "image-insure-preview-2",
+    },
   },
   {
     id: "4",
@@ -57,10 +57,10 @@ export const projectsPreviews = [
     category__name: "Interaction Design / Front End Development",
     tech__stack: "HTML / CSS / JS",
     live__page: "https://solvixcode.com/portfolio",
-    static__previews: [
-      { image__main: "image-fylo-hero" },
-      { image__1: "image-fylo-preview-1" },
-      { image__2: "image-fylo-preview-2" },
-    ],
+    static__previews: {
+      image__main: "image-fylo-hero",
+      image__1: "image-fylo-preview-1",
+      image__2: "image-fylo-preview-2",
+    },
   },
 ];

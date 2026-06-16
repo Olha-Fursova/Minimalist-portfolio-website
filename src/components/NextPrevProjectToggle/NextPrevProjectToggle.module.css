@@ -1,0 +1,73 @@
+/* ======================================
+    Next Prev Project Toggle component
+====================================== */
+
+/* Containers */
+
+.change__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid var(--color-decorative-15);
+  border-bottom: 1px solid var(--color-decorative-15);
+}
+
+.change__box {
+  padding: 2.1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.change__prev {
+  align-items: flex-start;
+  text-align: start;
+}
+
+.change__next {
+  align-items: flex-end;
+  text-align: end;
+}
+
+.change__content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography */
+
+.change__title {
+  font-size: 3.2rem;
+  line-height: 130%;
+  letter-spacing: -0.3px;
+  font-weight: 300;
+  font-family: var(--font-accent);
+}
+
+.change__text {
+  font-size: 1.6rem;
+  line-height: 187.5%;
+  letter-spacing: 0;
+  font-weight: 300;
+
+  color: var(--color-text-50);
+}
+
+/* Icons */
+
+.change__icon {
+  width: 0.8rem;
+  height: 1.6rem;
+  fill: none;
+  stroke: var(--color-surface);
+}
+
+/* Figures */
+
+.decorative__vertical {
+  width: 1px;
+  align-self: stretch;
+  background-color: var(--color-decorative-15);
+}

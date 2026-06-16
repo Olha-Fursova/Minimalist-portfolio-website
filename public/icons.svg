@@ -7,6 +7,14 @@
 <path opacity="0.25" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.4615" d="M0.55 1.101l19.692 9.846 19.692-9.846"></path>
 </symbol>
 
+<symbol id="icon-prev" viewBox="0 0 19 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.8824" d="M16.39 0.666l-15.059 15.059 15.059 15.059"></path>
+</symbol>
+
+<symbol id="icon-next" viewBox="0 0 19 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.8824" d="M0.665 0.666l15.059 15.059-15.059 15.059"></path>
+</symbol>
+
 <symbol id="icon-logo" viewBox="0 0 61 32">
 <path d="M60.082 5.878l-15.674 26.122-15.674-26.122h31.348zM31.347 26.122h-31.347l15.674-26.122 15.673 26.122z"></path>
 </symbol>
