@@ -66,6 +66,10 @@
 /* Desktop */
 
 @media screen and (min-width: 90rem) {
+  .content__container {
+    gap: 5.2rem;
+  }
+  
   .content__card {
     display: flex;
   }
