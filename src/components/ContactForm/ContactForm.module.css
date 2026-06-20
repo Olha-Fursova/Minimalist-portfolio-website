@@ -56,7 +56,8 @@
 .input__box::placeholder {
   font-weight: 300;
 
-  color: var(--color-text-40);
+  color: var(--color-text);
+  opacity: 0.4;
 }
 
 .error__message {

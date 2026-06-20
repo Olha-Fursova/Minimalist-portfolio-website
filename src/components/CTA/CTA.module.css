@@ -23,7 +23,8 @@
   display: none;
   height: 1px;
   width: auto;
-  background-color: var(--color-decorative-15);
+  background-color: var(--grey);
+  opacity: 0.15;
 }
 
 /* Tablet */

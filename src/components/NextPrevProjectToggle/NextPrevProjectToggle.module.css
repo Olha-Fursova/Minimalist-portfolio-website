@@ -52,7 +52,8 @@
   letter-spacing: 0;
   font-weight: 300;
 
-  color: var(--color-text-50);
+  color: var(--color-text);
+  opacity: 0.5;
 }
 
 /* Icons */
@@ -69,5 +70,20 @@
 .decorative__vertical {
   width: 1px;
   align-self: stretch;
-  background-color: var(--color-decorative-15);
+  background-color: var(--grey);
+  opacity: 0.15;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 48rem) {
+  .change__box {
+    flex-direction: row;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .change__next {
+    flex-direction: row-reverse;
+  }
 }
