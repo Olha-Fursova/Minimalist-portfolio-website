@@ -1,11 +1,15 @@
 import { Link } from "react-router";
+import clsx from "clsx";
 import ResponsiveImage from "../../../../components/images/ResponsiveImage/ResponsiveImage";
+import useIntersectionObserver from "../../../../hooks/useIntersectionObserver";
 
 import css from "./About.module.css";
 
 const About = () => {
+  const {ref, isVisible} = useIntersectionObserver();
+
   return (
-    <section className="section" id="about">
+    <section className={clsx("section", isVisible ? "sectionVisible" : "sectionHiddenReverse")} id="about" ref={ref}>
       <div className={`container ${css.about__container}`}>
         <ResponsiveImage
           baseName="image-homepage-profile"

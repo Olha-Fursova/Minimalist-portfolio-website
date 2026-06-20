@@ -22,7 +22,7 @@ const Contact = () => {
               form.
             </p>
 
-            <SocialLinksList iconColor={"var(--color-surface"} marginLeft="0"/>
+            <SocialLinksList iconColor={"var(--color-surface"} variant="contact"/>
           </div>
           
           <div className="decorative__line"></div>

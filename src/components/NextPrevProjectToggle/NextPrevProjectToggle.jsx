@@ -1,11 +1,23 @@
 import { Link } from "react-router";
+import clsx from "clsx";
 
 import css from "./NextPrevProjectToggle.module.css";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 const NextPrevProjectToggle = ({ prevProject, nextProject }) => {
+  const { ref, isVisible } = useIntersectionObserver();
   return (
-    <div className={css.change__container}>
-      <Link to={`/portfolio/${prevProject.id}`} className={`${css.change__box} ${css.change__prev}`}>
+    <div
+      className={clsx(
+        css.change__container,
+        isVisible ? "sectionVisible" : "sectionHiddenDown",
+      )}
+      ref={ref}
+    >
+      <Link
+        to={`/portfolio/${prevProject.id}`}
+        className={`${css.change__box} ${css.change__prev}`}
+      >
         <svg className={css.change__icon}>
           <use href="/icons.svg#icon-prev" />
         </svg>
@@ -17,7 +29,10 @@ const NextPrevProjectToggle = ({ prevProject, nextProject }) => {
 
       <div className={css.decorative__vertical}></div>
 
-      <Link to={`/portfolio/${nextProject.id}`} className={`${css.change__box} ${css.change__next}`}>
+      <Link
+        to={`/portfolio/${nextProject.id}`}
+        className={`${css.change__box} ${css.change__next}`}
+      >
         <svg className={css.change__icon}>
           <use href="/icons.svg#icon-next" />
         </svg>

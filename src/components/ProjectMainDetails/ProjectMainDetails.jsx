@@ -1,8 +1,19 @@
+import clsx from "clsx";
+
 import css from "./ProjectMainDetails.module.css";
 
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+
 const ProjectMainDetails = ({ project }) => {
+  const { ref, isVisible } = useIntersectionObserver();
   return (
-    <div className={css.content__container}>
+    <div
+      className={clsx(
+        css.content__container,
+        isVisible ? "sectionVisible" : "sectionHiddenReverse",
+      )}
+      ref={ref}
+    >
       <div className="decorative__line"></div>
 
       <div className={css.content__card}>

@@ -28,7 +28,7 @@
 /* Tablet */
 
 @media screen and (min-width: 48rem) {
-  .social__list {
+  .footer__social {
     margin-left: auto;
   }
 }

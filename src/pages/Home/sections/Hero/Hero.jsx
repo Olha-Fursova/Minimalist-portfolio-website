@@ -1,9 +1,14 @@
+import clsx from "clsx";
+
 import ResponsiveImage from "../../../../components/images/ResponsiveImage/ResponsiveImage";
 import css from "./Hero.module.css";
 
+import useIntersectionObserver from "../../../../hooks/useIntersectionObserver";
+
 const Hero = () => {
+  const {ref, isVisible} = useIntersectionObserver();
   return (
-    <section className="section">
+    <section className={clsx("section", isVisible ? "sectionVisible" : "sectionHiddenDown")} ref={ref}>
       <div className={`container ${css.hero__container}`}>
         <ResponsiveImage
           baseName="image-homepage-hero"

@@ -33,7 +33,7 @@ const Footer = () => {
           </NavLink>
         </nav>
 
-        <SocialLinksList iconColor="var(--color-bg)" marginLeft="auto"/>
+        <SocialLinksList iconColor="var(--color-bg)" variant="footer"/>
       </div>
     </footer>
   );
