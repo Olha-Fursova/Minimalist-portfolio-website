@@ -25,7 +25,7 @@ const ProjectMainDetails = ({ project }) => {
           <p className={css.extras__text}>{project.tech__stack}</p>
         </div>
 
-        <a className="btn btn__secondary" href="">
+        <a className="btn btn__secondary" href="https://solvixcode.com/">
           Visit Website
         </a>
       </div>
