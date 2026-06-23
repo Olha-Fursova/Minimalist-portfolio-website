@@ -1,8 +1,7 @@
 import css from "./Portfolio.module.css";
 
 import { projectsPreviews } from "../../data/projectsPreview";
-import PreviewProjectList from "../../components/PreviewProjectList/PreviewProjectList";
-import CTA from "../../components/CTA/CTA";
+import {PreviewProjectList, CTA} from "../../components";
 
 const Portfolio = () => {
   return (

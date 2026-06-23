@@ -1,11 +1,13 @@
 import { useParams } from "react-router-dom";
 
 import css from "./ProjectDetailsPage.module.css";
-import ResponsiveImage from "../../components/images/ResponsiveImage/ResponsiveImage";
 import { projectsPreviews } from "../../data/projectsPreview";
-import ProjectMainDetails from "../../components/ProjectMainDetails/ProjectMainDetails";
-import CTA from "../../components/CTA/CTA";
-import NextPrevProjectToggle from "../../components/NextPrevProjectToggle/NextPrevProjectToggle";
+import {
+  ProjectMainDetails,
+  ResponsiveImage,
+  CTA,
+  NextPrevProjectToggle,
+} from "../../components";
 
 const ProjectDetailsPage = () => {
   const { projectId } = useParams();

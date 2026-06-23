@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 import css from "./PreviewProjectCard.module.css";
 
-import ResponsiveImage from "../images/ResponsiveImage/ResponsiveImage";
+import {ResponsiveImage} from "../../components";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 const PreviewProjectCard = ({ project, index }) => {

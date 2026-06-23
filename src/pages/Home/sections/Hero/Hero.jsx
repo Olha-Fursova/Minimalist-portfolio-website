@@ -1,14 +1,20 @@
 import clsx from "clsx";
 
-import ResponsiveImage from "../../../../components/images/ResponsiveImage/ResponsiveImage";
+import { ResponsiveImage } from "../../../../components";
 import css from "./Hero.module.css";
 
 import useIntersectionObserver from "../../../../hooks/useIntersectionObserver";
 
 const Hero = () => {
-  const {ref, isVisible} = useIntersectionObserver();
+  const { ref, isVisible } = useIntersectionObserver();
   return (
-    <section className={clsx("section", isVisible ? "sectionVisible" : "sectionHiddenDown")} ref={ref}>
+    <section
+      className={clsx(
+        "section",
+        isVisible ? "sectionVisible" : "sectionHiddenDown",
+      )}
+      ref={ref}
+    >
       <div className={`container ${css.hero__container}`}>
         <ResponsiveImage
           baseName="image-homepage-hero"
@@ -26,9 +32,7 @@ const Hero = () => {
                 <use href="/icons.svg#icon-arrow-down" />
               </svg>
             </span>
-            <p className="btn">
-              About Me
-            </p>
+            <p className="btn">About Me</p>
           </a>
         </div>
       </div>

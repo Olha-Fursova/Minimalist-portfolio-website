@@ -1,5 +1,5 @@
 import css from "./PreviewProjectList.module.css"
-import PreviewProjectCard from "../PreviewProjectCard/PreviewProjectCard";
+import {PreviewProjectCard} from "../../components";
 
 const PreviewProjectList = ({ projects }) => {
   return (

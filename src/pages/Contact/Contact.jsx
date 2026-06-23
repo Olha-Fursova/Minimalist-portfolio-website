@@ -1,6 +1,5 @@
 import css from "./Contact.module.css";
-import SocialLinksList from "../../components/SocialLinksList/SocialLinksList";
-import ContactForm from "../../components/ContactForm/ContactForm";
+import { SocialLinksList, ContactForm } from "../../components";
 
 const Contact = () => {
   return (
@@ -9,7 +8,9 @@ const Contact = () => {
         <div className={`container ${css.contact__container}`}>
           <div className="decorative__line"></div>
           <div className={css.contact__content}>
-            <h1 className={`section__title ${css.contact__header}`}>Get in Touch</h1>
+            <h1 className={`section__title ${css.contact__header}`}>
+              Get in Touch
+            </h1>
             <p className={css.contact__text}>
               I’d love to hear about what you’re working on and how I could
               help. I’m currently looking for a new role and am open to a wide
@@ -22,9 +23,12 @@ const Contact = () => {
               form.
             </p>
 
-            <SocialLinksList iconColor={"var(--color-surface)"} variant="contact"/>
+            <SocialLinksList
+              iconColor={"var(--color-surface)"}
+              variant="contact"
+            />
           </div>
-          
+
           <div className="decorative__line"></div>
         </div>
       </section>
