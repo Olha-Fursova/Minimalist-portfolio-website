@@ -1,6 +1,6 @@
 import css from "./Portfolio.module.css";
 
-import { projectsPreviews } from "../../data/projects-preview";
+import { projectsPreviews } from "../../data/projectsPreview";
 import PreviewProjectList from "../../components/PreviewProjectList/PreviewProjectList";
 import CTA from "../../components/CTA/CTA";
 

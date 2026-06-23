@@ -161,7 +161,7 @@
     display: block;
   }
 
-  .nav__link.active {
+  .active {
     color: var(--color-primary-light);
   }
 }
