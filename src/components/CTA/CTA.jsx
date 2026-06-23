@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import clsx from "clsx";
 import css from "./CTA.module.css";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";

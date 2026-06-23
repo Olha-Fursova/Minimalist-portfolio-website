@@ -1,7 +1,7 @@
 import clsx from "clsx";
 
 import css from "./MobileMenu.module.css";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 
 const MobileMenu = ({ isOpen, onClose }) => {
   return (

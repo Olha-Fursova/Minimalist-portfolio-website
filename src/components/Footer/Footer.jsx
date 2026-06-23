@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 
 import css from "./Footer.module.css";
 import {SocialLinksList} from "../../components";
