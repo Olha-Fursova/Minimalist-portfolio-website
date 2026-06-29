@@ -9,7 +9,7 @@ A multi-page portfolio site built with React. Includes three pages (Home, Portfo
   - [Main task](#main-task)
   - [Built With](#built-with)
   
-- [Conclusions](#сonclusions)
+- [Conclusions](#conclusions)
   - [What have I achieved](#what-have-i-achieved)
 - [More about me](#more-about-me)
 
@@ -45,8 +45,8 @@ Your users should be able to:
 - clsx
 - Formik
 - Yup
-- React Router DOM
-- Ract Loader Spinner
+- react-router-dom
+- react-loader-spinner
 - EmailJS
 
 ## Conclusions
