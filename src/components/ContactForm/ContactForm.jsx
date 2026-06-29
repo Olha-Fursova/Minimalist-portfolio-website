@@ -51,11 +51,8 @@ const ContactForm = () => {
       setIsSent(true);
 
       actions.resetForm();
-    } catch (error) {
+    } catch {
       setIsError(true);
-      console.log("EMAILJS ERROR:", error);
-      console.log("STATUS:", error.status);
-      console.log("TEXT:", error.text);
     }
   };
 
