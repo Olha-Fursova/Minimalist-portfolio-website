@@ -12,17 +12,25 @@ const AppBar = ({ isOpen, onToggle }) => {
     <header className={css.header}>
       <div className={css.header__container}>
         <NavLink to="/" className={css.logo__container}>
-          <svg className={css.logo__icon}>
+          <svg className={css.logo__icon} aria-label="logo">
             <use href="/icons.svg#icon-logo" />
           </svg>
 
-          <svg className={css.logo__decorative1}>
+          <svg className={css.logo__decorative1} aria-label="logo">
             <use href="/icons.svg#icon-logo" />
           </svg>
 
-          <svg className={css.logo__decorative2}>
+          <svg className={css.logo__decorative2} aria-label="logo">
             <use href="/icons.svg#icon-logo" />
           </svg>
+
+          <span
+            className="visually__hidden"
+            aria-hidden="true"
+            focusable="false"
+          >
+            Logo
+          </span>
         </NavLink>
 
         <nav className={css.nav}>

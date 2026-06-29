@@ -30,6 +30,10 @@ const ContactForm = () => {
   const emailFieldId = useId();
   const msgFieldId = useId();
 
+  const nameErrorId = useId();
+  const emailErrorId = useId();
+  const msgErrorId = useId();
+
   const [isSent, setIsSent] = useState(false);
   const [isError, setIsError] = useState(false);
 
@@ -74,11 +78,14 @@ const ContactForm = () => {
               name="name"
               id={nameFieldId}
               placeholder="Jane Appleseed"
+              aria-describedby={nameErrorId}
+              aria-invalid={errors.name && touched.name}
             />
             <ErrorMessage
               className={css.error__message}
               name="name"
               component="span"
+              id={nameErrorId}
             />
           </div>
 
@@ -92,11 +99,14 @@ const ContactForm = () => {
               name="email"
               id={emailFieldId}
               placeholder="email@example.com"
+              aria-describedby={emailErrorId}
+              aria-invalid={errors.name && touched.name}
             />
             <ErrorMessage
               className={css.error__message}
               name="email"
               component="span"
+              id={emailErrorId}
             />
           </div>
 
@@ -111,11 +121,14 @@ const ContactForm = () => {
               id={msgFieldId}
               row="5"
               placeholder="How can I help?"
+              aria-describedby={msgErrorId}
+              aria-invalid={errors.name && touched.name}
             />
             <ErrorMessage
               className={css.error__message}
               name="message"
               component="span"
+              id={msgErrorId}
             />
           </div>
 

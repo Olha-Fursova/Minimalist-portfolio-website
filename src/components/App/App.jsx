@@ -21,7 +21,7 @@ const App = () => {
 
       <MobileMenu isOpen={isMobileOpen} onClose={handleMobileOpen}/>
 
-      <main className={css.content}>
+      <main className={css.content} inert={isMobileOpen ? "" : undefined}>
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<Home />} />

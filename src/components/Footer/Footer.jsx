@@ -1,24 +1,32 @@
 import { NavLink } from "react-router-dom";
 
 import css from "./Footer.module.css";
-import {SocialLinksList} from "../../components";
+import { SocialLinksList } from "../../components";
 
 const Footer = () => {
   return (
     <footer className={css.footer}>
       <div className={css.footer__container}>
         <NavLink to="/" className={css.logo__container}>
-          <svg className={css.logo__icon}>
+          <svg className={css.logo__icon} aria-label="logo">
             <use href="/icons.svg#icon-logo" />
           </svg>
 
-          <svg className={css.logo__decorative1}>
+          <svg className={css.logo__decorative1} aria-label="logo">
             <use href="/icons.svg#icon-logo" />
           </svg>
-          
-          <svg className={css.logo__decorative2}>
+
+          <svg className={css.logo__decorative2} aria-label="logo">
             <use href="/icons.svg#icon-logo" />
           </svg>
+
+          <span
+            className="visually__hidden"
+            aria-hidden="true"
+            focusable="false"
+          >
+            Logo
+          </span>
         </NavLink>
 
         <nav className={css.nav}>
@@ -33,7 +41,7 @@ const Footer = () => {
           </NavLink>
         </nav>
 
-        <SocialLinksList iconColor="var(--color-bg)" variant="footer"/>
+        <SocialLinksList iconColor="var(--color-bg)" variant="footer" />
       </div>
     </footer>
   );
