@@ -100,7 +100,7 @@ const ContactForm = () => {
               id={emailFieldId}
               placeholder="email@example.com"
               aria-describedby={emailErrorId}
-              aria-invalid={errors.name && touched.name}
+              aria-invalid={errors.email && touched.email}
             />
             <ErrorMessage
               className={css.error__message}
@@ -122,7 +122,7 @@ const ContactForm = () => {
               rows="5"
               placeholder="How can I help?"
               aria-describedby={msgErrorId}
-              aria-invalid={errors.name && touched.name}
+              aria-invalid={errors.message && touched.message}
             />
             <ErrorMessage
               className={css.error__message}
