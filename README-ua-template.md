@@ -16,7 +16,7 @@
 ## Огляд
 
 ### Зображення
-![Recipe page](/preview.jpg)
+![Screenshot](./public/preview.jpg)
 
 ### Опис завдання
 

@@ -16,7 +16,7 @@ A multi-page portfolio site built with React. Includes three pages (Home, Portfo
 ## Overview
 
 ### Screenshot
-![Screenshot](/preview.jpg)
+![Screenshot](./public/preview.jpg)
 
 ### Main task
 
