@@ -119,7 +119,7 @@ const ContactForm = () => {
               as="textarea"
               name="message"
               id={msgFieldId}
-              row="5"
+              rows="5"
               placeholder="How can I help?"
               aria-describedby={msgErrorId}
               aria-invalid={errors.name && touched.name}
